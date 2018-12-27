@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var socket;
+    if (window.WebSocket) {
+        socket = new WebSocket("ws://localhost:8899/ws")
+
+        socket.onmessage = function (ev) {
+            var ta = document.getElementById("repsonseText")
+            ta.value = ta.value + "\n" + ev.data
+        }
+
+        socket.onopen = function (ev) {
+            var ta = document.getElementById("repsonseText")
+            ta.value = "connect established...."
+        }
+
+        socket.onclose = function (ev) {
+            var ta = document.getElementById("repsonseText")
+            ta.value = ta.value + "\n connection closed!"
+        }
+
+    } else {
+        alert("browser does not support WebSocket")
+    }
+
+    function send(message) {
+        if (!window.WebSocket) {
+            return
+        }
+
+        if (socket.readyState == WebSocket.OPEN) {
+            socket.send(message)
+        } else {
+            alert("connection does not establish...")
+        }
+    }
+
+</script>
+
+<form onsubmit="return false;">
+
+    <textarea name="message" style="width: 400px; height: 200px;">
+
+    </textarea>
+
+    <input type="button" value="send data" onclick="send(this.form.message.value)">
+
+    <h3>server output:</h3>
+
+    <textarea id="repsonseText" style="width: 400px; height: 200px;"></textarea>
+
+    <input type="button" onclick="javascript: document.getElementById('repsonseText').value=''" value="clear text">
+</form>
+</body>
+</html>
