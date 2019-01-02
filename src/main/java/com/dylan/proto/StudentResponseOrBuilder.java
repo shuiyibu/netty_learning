@@ -7,30 +7,30 @@ public interface StudentResponseOrBuilder extends
         // @@protoc_insertion_point(interface_extends:com.dylan.proto.StudentResponse)
         com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>string name = 1;</code>
-     */
-    String getName();
+  /**
+   * <code>string name = 1;</code>
+   */
+  java.lang.String getName();
 
-    /**
-     * <code>string name = 1;</code>
-     */
-    com.google.protobuf.ByteString
-    getNameBytes();
+  /**
+   * <code>string name = 1;</code>
+   */
+  com.google.protobuf.ByteString
+  getNameBytes();
 
-    /**
-     * <code>int32 age = 2;</code>
-     */
-    int getAge();
+  /**
+   * <code>int32 age = 2;</code>
+   */
+  int getAge();
 
-    /**
-     * <code>string city = 3;</code>
-     */
-    String getCity();
+  /**
+   * <code>string city = 3;</code>
+   */
+  java.lang.String getCity();
 
-    /**
-     * <code>string city = 3;</code>
-     */
-    com.google.protobuf.ByteString
-    getCityBytes();
+  /**
+   * <code>string city = 3;</code>
+   */
+  com.google.protobuf.ByteString
+  getCityBytes();
 }

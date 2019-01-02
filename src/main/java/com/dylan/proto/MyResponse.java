@@ -13,7 +13,7 @@ public final class MyResponse extends
     public static final int REALNAME_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(class_scope:com.dylan.proto.MyResponse)
-    private static final MyResponse DEFAULT_INSTANCE;
+    private static final com.dylan.proto.MyResponse DEFAULT_INSTANCE;
     private static final com.google.protobuf.Parser<MyResponse>
             PARSER = new com.google.protobuf.AbstractParser<MyResponse>() {
         public MyResponse parsePartialFrom(
@@ -25,10 +25,10 @@ public final class MyResponse extends
     };
 
     static {
-        DEFAULT_INSTANCE = new MyResponse();
+        DEFAULT_INSTANCE = new com.dylan.proto.MyResponse();
     }
 
-    private volatile Object realname_;
+    private volatile java.lang.Object realname_;
     private byte memoizedIsInitialized = -1;
 
     // Use MyResponse.newBuilder() to construct.
@@ -46,7 +46,7 @@ public final class MyResponse extends
             throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-            throw new NullPointerException();
+            throw new java.lang.NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -67,7 +67,7 @@ public final class MyResponse extends
                         break;
                     }
                     case 18: {
-                        String s = input.readStringRequireUtf8();
+                        java.lang.String s = input.readStringRequireUtf8();
 
                         realname_ = s;
                         break;
@@ -90,51 +90,51 @@ public final class MyResponse extends
         return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_MyResponse_descriptor;
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static MyResponse parseFrom(byte[] data)
+    public static com.dylan.proto.MyResponse parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static MyResponse parseFrom(java.io.InputStream input)
+    public static com.dylan.proto.MyResponse parseFrom(java.io.InputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -142,13 +142,13 @@ public final class MyResponse extends
                 .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static MyResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.dylan.proto.MyResponse parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static MyResponse parseDelimitedFrom(
+    public static com.dylan.proto.MyResponse parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -156,14 +156,14 @@ public final class MyResponse extends
                 .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
     }
 
-    public static MyResponse parseFrom(
+    public static com.dylan.proto.MyResponse parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -175,11 +175,11 @@ public final class MyResponse extends
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    public static Builder newBuilder(MyResponse prototype) {
+    public static Builder newBuilder(com.dylan.proto.MyResponse prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
-    public static MyResponse getDefaultInstance() {
+    public static com.dylan.proto.MyResponse getDefaultInstance() {
         return DEFAULT_INSTANCE;
     }
 
@@ -187,30 +187,30 @@ public final class MyResponse extends
         return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
         return this.unknownFields;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
     internalGetFieldAccessorTable() {
         return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_MyResponse_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                        MyResponse.class, Builder.class);
+                        com.dylan.proto.MyResponse.class, com.dylan.proto.MyResponse.Builder.class);
     }
 
     /**
      * <code>string realname = 2;</code>
      */
-    public String getRealname() {
-        Object ref = realname_;
-        if (ref instanceof String) {
-            return (String) ref;
+    public java.lang.String getRealname() {
+        java.lang.Object ref = realname_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
         } else {
             com.google.protobuf.ByteString bs =
                     (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             realname_ = s;
             return s;
         }
@@ -221,11 +221,11 @@ public final class MyResponse extends
      */
     public com.google.protobuf.ByteString
     getRealnameBytes() {
-        Object ref = realname_;
-        if (ref instanceof String) {
+        java.lang.Object ref = realname_;
+        if (ref instanceof java.lang.String) {
             com.google.protobuf.ByteString b =
                     com.google.protobuf.ByteString.copyFromUtf8(
-                            (String) ref);
+                            (java.lang.String) ref);
             realname_ = b;
             return b;
         } else {
@@ -263,15 +263,15 @@ public final class MyResponse extends
         return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
         if (obj == this) {
             return true;
         }
-        if (!(obj instanceof MyResponse)) {
+        if (!(obj instanceof com.dylan.proto.MyResponse)) {
             return super.equals(obj);
         }
-        MyResponse other = (MyResponse) obj;
+        com.dylan.proto.MyResponse other = (com.dylan.proto.MyResponse) obj;
 
         boolean result = true;
         result = result && getRealname()
@@ -280,7 +280,7 @@ public final class MyResponse extends
         return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
         if (memoizedHashCode != 0) {
             return memoizedHashCode;
@@ -303,19 +303,19 @@ public final class MyResponse extends
                 ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MyResponse> getParserForType() {
         return PARSER;
     }
 
-    public MyResponse getDefaultInstanceForType() {
+    public com.dylan.proto.MyResponse getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
     }
 
@@ -326,7 +326,7 @@ public final class MyResponse extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
             // @@protoc_insertion_point(builder_implements:com.dylan.proto.MyResponse)
             com.dylan.proto.MyResponseOrBuilder {
-        private Object realname_ = "";
+        private java.lang.Object realname_ = "";
 
         // Construct using com.dylan.proto.MyResponse.newBuilder()
         private Builder() {
@@ -334,7 +334,7 @@ public final class MyResponse extends
         }
 
         private Builder(
-                BuilderParent parent) {
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
             super(parent);
             maybeForceBuilderInitialization();
         }
@@ -344,11 +344,11 @@ public final class MyResponse extends
             return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_MyResponse_descriptor;
         }
 
-        protected FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
             return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_MyResponse_fieldAccessorTable
                     .ensureFieldAccessorsInitialized(
-                            MyResponse.class, Builder.class);
+                            com.dylan.proto.MyResponse.class, com.dylan.proto.MyResponse.Builder.class);
         }
 
         private void maybeForceBuilderInitialization() {
@@ -369,20 +369,20 @@ public final class MyResponse extends
             return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_MyResponse_descriptor;
         }
 
-        public MyResponse getDefaultInstanceForType() {
-            return MyResponse.getDefaultInstance();
+        public com.dylan.proto.MyResponse getDefaultInstanceForType() {
+            return com.dylan.proto.MyResponse.getDefaultInstance();
         }
 
-        public MyResponse build() {
-            MyResponse result = buildPartial();
+        public com.dylan.proto.MyResponse build() {
+            com.dylan.proto.MyResponse result = buildPartial();
             if (!result.isInitialized()) {
                 throw newUninitializedMessageException(result);
             }
             return result;
         }
 
-        public MyResponse buildPartial() {
-            MyResponse result = new MyResponse(this);
+        public com.dylan.proto.MyResponse buildPartial() {
+            com.dylan.proto.MyResponse result = new com.dylan.proto.MyResponse(this);
             result.realname_ = realname_;
             onBuilt();
             return result;
@@ -394,7 +394,7 @@ public final class MyResponse extends
 
         public Builder setField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                Object value) {
+                java.lang.Object value) {
             return (Builder) super.setField(field, value);
         }
 
@@ -410,27 +410,27 @@ public final class MyResponse extends
 
         public Builder setRepeatedField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, Object value) {
+                int index, java.lang.Object value) {
             return (Builder) super.setRepeatedField(field, index, value);
         }
 
         public Builder addRepeatedField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                Object value) {
+                java.lang.Object value) {
             return (Builder) super.addRepeatedField(field, value);
         }
 
         public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof MyResponse) {
-                return mergeFrom((MyResponse) other);
+            if (other instanceof com.dylan.proto.MyResponse) {
+                return mergeFrom((com.dylan.proto.MyResponse) other);
             } else {
                 super.mergeFrom(other);
                 return this;
             }
         }
 
-        public Builder mergeFrom(MyResponse other) {
-            if (other == MyResponse.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.dylan.proto.MyResponse other) {
+            if (other == com.dylan.proto.MyResponse.getDefaultInstance()) return this;
             if (!other.getRealname().isEmpty()) {
                 realname_ = other.realname_;
                 onChanged();
@@ -448,11 +448,11 @@ public final class MyResponse extends
                 com.google.protobuf.CodedInputStream input,
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                 throws java.io.IOException {
-            MyResponse parsedMessage = null;
+            com.dylan.proto.MyResponse parsedMessage = null;
             try {
                 parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                parsedMessage = (MyResponse) e.getUnfinishedMessage();
+                parsedMessage = (com.dylan.proto.MyResponse) e.getUnfinishedMessage();
                 throw e.unwrapIOException();
             } finally {
                 if (parsedMessage != null) {
@@ -465,16 +465,16 @@ public final class MyResponse extends
         /**
          * <code>string realname = 2;</code>
          */
-        public String getRealname() {
-            Object ref = realname_;
-            if (!(ref instanceof String)) {
+        public java.lang.String getRealname() {
+            java.lang.Object ref = realname_;
+            if (!(ref instanceof java.lang.String)) {
                 com.google.protobuf.ByteString bs =
                         (com.google.protobuf.ByteString) ref;
-                String s = bs.toStringUtf8();
+                java.lang.String s = bs.toStringUtf8();
                 realname_ = s;
                 return s;
             } else {
-                return (String) ref;
+                return (java.lang.String) ref;
             }
         }
 
@@ -482,7 +482,7 @@ public final class MyResponse extends
          * <code>string realname = 2;</code>
          */
         public Builder setRealname(
-                String value) {
+                java.lang.String value) {
             if (value == null) {
                 throw new NullPointerException();
             }
@@ -497,11 +497,11 @@ public final class MyResponse extends
          */
         public com.google.protobuf.ByteString
         getRealnameBytes() {
-            Object ref = realname_;
+            java.lang.Object ref = realname_;
             if (ref instanceof String) {
                 com.google.protobuf.ByteString b =
                         com.google.protobuf.ByteString.copyFromUtf8(
-                                (String) ref);
+                                (java.lang.String) ref);
                 realname_ = b;
                 return b;
             } else {

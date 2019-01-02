@@ -13,7 +13,7 @@ public final class StreamRequest extends
     public static final int REQUEST_INFO_FIELD_NUMBER = 1;
     private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(class_scope:com.dylan.proto.StreamRequest)
-    private static final StreamRequest DEFAULT_INSTANCE;
+    private static final com.dylan.proto.StreamRequest DEFAULT_INSTANCE;
     private static final com.google.protobuf.Parser<StreamRequest>
             PARSER = new com.google.protobuf.AbstractParser<StreamRequest>() {
         public StreamRequest parsePartialFrom(
@@ -25,10 +25,10 @@ public final class StreamRequest extends
     };
 
     static {
-        DEFAULT_INSTANCE = new StreamRequest();
+        DEFAULT_INSTANCE = new com.dylan.proto.StreamRequest();
     }
 
-    private volatile Object requestInfo_;
+    private volatile java.lang.Object requestInfo_;
     private byte memoizedIsInitialized = -1;
 
     // Use StreamRequest.newBuilder() to construct.
@@ -46,7 +46,7 @@ public final class StreamRequest extends
             throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-            throw new NullPointerException();
+            throw new java.lang.NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -67,7 +67,7 @@ public final class StreamRequest extends
                         break;
                     }
                     case 10: {
-                        String s = input.readStringRequireUtf8();
+                        java.lang.String s = input.readStringRequireUtf8();
 
                         requestInfo_ = s;
                         break;
@@ -90,51 +90,51 @@ public final class StreamRequest extends
         return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StreamRequest_descriptor;
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static StreamRequest parseFrom(byte[] data)
+    public static com.dylan.proto.StreamRequest parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static StreamRequest parseFrom(java.io.InputStream input)
+    public static com.dylan.proto.StreamRequest parseFrom(java.io.InputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -142,13 +142,13 @@ public final class StreamRequest extends
                 .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static StreamRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.dylan.proto.StreamRequest parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static StreamRequest parseDelimitedFrom(
+    public static com.dylan.proto.StreamRequest parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -156,14 +156,14 @@ public final class StreamRequest extends
                 .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
     }
 
-    public static StreamRequest parseFrom(
+    public static com.dylan.proto.StreamRequest parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -175,11 +175,11 @@ public final class StreamRequest extends
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    public static Builder newBuilder(StreamRequest prototype) {
+    public static Builder newBuilder(com.dylan.proto.StreamRequest prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
-    public static StreamRequest getDefaultInstance() {
+    public static com.dylan.proto.StreamRequest getDefaultInstance() {
         return DEFAULT_INSTANCE;
     }
 
@@ -187,30 +187,30 @@ public final class StreamRequest extends
         return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
         return this.unknownFields;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
     internalGetFieldAccessorTable() {
         return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StreamRequest_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                        StreamRequest.class, Builder.class);
+                        com.dylan.proto.StreamRequest.class, com.dylan.proto.StreamRequest.Builder.class);
     }
 
     /**
      * <code>string request_info = 1;</code>
      */
-    public String getRequestInfo() {
-        Object ref = requestInfo_;
-        if (ref instanceof String) {
-            return (String) ref;
+    public java.lang.String getRequestInfo() {
+        java.lang.Object ref = requestInfo_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
         } else {
             com.google.protobuf.ByteString bs =
                     (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             requestInfo_ = s;
             return s;
         }
@@ -221,11 +221,11 @@ public final class StreamRequest extends
      */
     public com.google.protobuf.ByteString
     getRequestInfoBytes() {
-        Object ref = requestInfo_;
-        if (ref instanceof String) {
+        java.lang.Object ref = requestInfo_;
+        if (ref instanceof java.lang.String) {
             com.google.protobuf.ByteString b =
                     com.google.protobuf.ByteString.copyFromUtf8(
-                            (String) ref);
+                            (java.lang.String) ref);
             requestInfo_ = b;
             return b;
         } else {
@@ -263,15 +263,15 @@ public final class StreamRequest extends
         return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
         if (obj == this) {
             return true;
         }
-        if (!(obj instanceof StreamRequest)) {
+        if (!(obj instanceof com.dylan.proto.StreamRequest)) {
             return super.equals(obj);
         }
-        StreamRequest other = (StreamRequest) obj;
+        com.dylan.proto.StreamRequest other = (com.dylan.proto.StreamRequest) obj;
 
         boolean result = true;
         result = result && getRequestInfo()
@@ -280,7 +280,7 @@ public final class StreamRequest extends
         return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
         if (memoizedHashCode != 0) {
             return memoizedHashCode;
@@ -303,19 +303,19 @@ public final class StreamRequest extends
                 ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<StreamRequest> getParserForType() {
         return PARSER;
     }
 
-    public StreamRequest getDefaultInstanceForType() {
+    public com.dylan.proto.StreamRequest getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
     }
 
@@ -326,7 +326,7 @@ public final class StreamRequest extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
             // @@protoc_insertion_point(builder_implements:com.dylan.proto.StreamRequest)
             com.dylan.proto.StreamRequestOrBuilder {
-        private Object requestInfo_ = "";
+        private java.lang.Object requestInfo_ = "";
 
         // Construct using com.dylan.proto.StreamRequest.newBuilder()
         private Builder() {
@@ -334,7 +334,7 @@ public final class StreamRequest extends
         }
 
         private Builder(
-                BuilderParent parent) {
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
             super(parent);
             maybeForceBuilderInitialization();
         }
@@ -344,11 +344,11 @@ public final class StreamRequest extends
             return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StreamRequest_descriptor;
         }
 
-        protected FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
             return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StreamRequest_fieldAccessorTable
                     .ensureFieldAccessorsInitialized(
-                            StreamRequest.class, Builder.class);
+                            com.dylan.proto.StreamRequest.class, com.dylan.proto.StreamRequest.Builder.class);
         }
 
         private void maybeForceBuilderInitialization() {
@@ -369,20 +369,20 @@ public final class StreamRequest extends
             return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StreamRequest_descriptor;
         }
 
-        public StreamRequest getDefaultInstanceForType() {
-            return StreamRequest.getDefaultInstance();
+        public com.dylan.proto.StreamRequest getDefaultInstanceForType() {
+            return com.dylan.proto.StreamRequest.getDefaultInstance();
         }
 
-        public StreamRequest build() {
-            StreamRequest result = buildPartial();
+        public com.dylan.proto.StreamRequest build() {
+            com.dylan.proto.StreamRequest result = buildPartial();
             if (!result.isInitialized()) {
                 throw newUninitializedMessageException(result);
             }
             return result;
         }
 
-        public StreamRequest buildPartial() {
-            StreamRequest result = new StreamRequest(this);
+        public com.dylan.proto.StreamRequest buildPartial() {
+            com.dylan.proto.StreamRequest result = new com.dylan.proto.StreamRequest(this);
             result.requestInfo_ = requestInfo_;
             onBuilt();
             return result;
@@ -394,7 +394,7 @@ public final class StreamRequest extends
 
         public Builder setField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                Object value) {
+                java.lang.Object value) {
             return (Builder) super.setField(field, value);
         }
 
@@ -410,27 +410,27 @@ public final class StreamRequest extends
 
         public Builder setRepeatedField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, Object value) {
+                int index, java.lang.Object value) {
             return (Builder) super.setRepeatedField(field, index, value);
         }
 
         public Builder addRepeatedField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                Object value) {
+                java.lang.Object value) {
             return (Builder) super.addRepeatedField(field, value);
         }
 
         public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof StreamRequest) {
-                return mergeFrom((StreamRequest) other);
+            if (other instanceof com.dylan.proto.StreamRequest) {
+                return mergeFrom((com.dylan.proto.StreamRequest) other);
             } else {
                 super.mergeFrom(other);
                 return this;
             }
         }
 
-        public Builder mergeFrom(StreamRequest other) {
-            if (other == StreamRequest.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.dylan.proto.StreamRequest other) {
+            if (other == com.dylan.proto.StreamRequest.getDefaultInstance()) return this;
             if (!other.getRequestInfo().isEmpty()) {
                 requestInfo_ = other.requestInfo_;
                 onChanged();
@@ -448,11 +448,11 @@ public final class StreamRequest extends
                 com.google.protobuf.CodedInputStream input,
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                 throws java.io.IOException {
-            StreamRequest parsedMessage = null;
+            com.dylan.proto.StreamRequest parsedMessage = null;
             try {
                 parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                parsedMessage = (StreamRequest) e.getUnfinishedMessage();
+                parsedMessage = (com.dylan.proto.StreamRequest) e.getUnfinishedMessage();
                 throw e.unwrapIOException();
             } finally {
                 if (parsedMessage != null) {
@@ -465,16 +465,16 @@ public final class StreamRequest extends
         /**
          * <code>string request_info = 1;</code>
          */
-        public String getRequestInfo() {
-            Object ref = requestInfo_;
-            if (!(ref instanceof String)) {
+        public java.lang.String getRequestInfo() {
+            java.lang.Object ref = requestInfo_;
+            if (!(ref instanceof java.lang.String)) {
                 com.google.protobuf.ByteString bs =
                         (com.google.protobuf.ByteString) ref;
-                String s = bs.toStringUtf8();
+                java.lang.String s = bs.toStringUtf8();
                 requestInfo_ = s;
                 return s;
             } else {
-                return (String) ref;
+                return (java.lang.String) ref;
             }
         }
 
@@ -482,7 +482,7 @@ public final class StreamRequest extends
          * <code>string request_info = 1;</code>
          */
         public Builder setRequestInfo(
-                String value) {
+                java.lang.String value) {
             if (value == null) {
                 throw new NullPointerException();
             }
@@ -497,11 +497,11 @@ public final class StreamRequest extends
          */
         public com.google.protobuf.ByteString
         getRequestInfoBytes() {
-            Object ref = requestInfo_;
+            java.lang.Object ref = requestInfo_;
             if (ref instanceof String) {
                 com.google.protobuf.ByteString b =
                         com.google.protobuf.ByteString.copyFromUtf8(
-                                (String) ref);
+                                (java.lang.String) ref);
                 requestInfo_ = b;
                 return b;
             } else {

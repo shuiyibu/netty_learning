@@ -15,7 +15,7 @@ public final class StudentResponse extends
     public static final int CITY_FIELD_NUMBER = 3;
     private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(class_scope:com.dylan.proto.StudentResponse)
-    private static final StudentResponse DEFAULT_INSTANCE;
+    private static final com.dylan.proto.StudentResponse DEFAULT_INSTANCE;
     private static final com.google.protobuf.Parser<StudentResponse>
             PARSER = new com.google.protobuf.AbstractParser<StudentResponse>() {
         public StudentResponse parsePartialFrom(
@@ -27,12 +27,12 @@ public final class StudentResponse extends
     };
 
     static {
-        DEFAULT_INSTANCE = new StudentResponse();
+        DEFAULT_INSTANCE = new com.dylan.proto.StudentResponse();
     }
 
-    private volatile Object name_;
+    private volatile java.lang.Object name_;
     private int age_;
-    private volatile Object city_;
+    private volatile java.lang.Object city_;
     private byte memoizedIsInitialized = -1;
 
     // Use StudentResponse.newBuilder() to construct.
@@ -52,7 +52,7 @@ public final class StudentResponse extends
             throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-            throw new NullPointerException();
+            throw new java.lang.NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -73,7 +73,7 @@ public final class StudentResponse extends
                         break;
                     }
                     case 10: {
-                        String s = input.readStringRequireUtf8();
+                        java.lang.String s = input.readStringRequireUtf8();
 
                         name_ = s;
                         break;
@@ -84,7 +84,7 @@ public final class StudentResponse extends
                         break;
                     }
                     case 26: {
-                        String s = input.readStringRequireUtf8();
+                        java.lang.String s = input.readStringRequireUtf8();
 
                         city_ = s;
                         break;
@@ -104,54 +104,54 @@ public final class StudentResponse extends
 
     public static final com.google.protobuf.Descriptors.Descriptor
     getDescriptor() {
-        return StudentProto.internal_static_com_dylan_proto_StudentResponse_descriptor;
+        return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StudentResponse_descriptor;
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static StudentResponse parseFrom(byte[] data)
+    public static com.dylan.proto.StudentResponse parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static StudentResponse parseFrom(java.io.InputStream input)
+    public static com.dylan.proto.StudentResponse parseFrom(java.io.InputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -159,13 +159,13 @@ public final class StudentResponse extends
                 .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static StudentResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.dylan.proto.StudentResponse parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static StudentResponse parseDelimitedFrom(
+    public static com.dylan.proto.StudentResponse parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -173,14 +173,14 @@ public final class StudentResponse extends
                 .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
     }
 
-    public static StudentResponse parseFrom(
+    public static com.dylan.proto.StudentResponse parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -192,11 +192,11 @@ public final class StudentResponse extends
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    public static Builder newBuilder(StudentResponse prototype) {
+    public static Builder newBuilder(com.dylan.proto.StudentResponse prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
-    public static StudentResponse getDefaultInstance() {
+    public static com.dylan.proto.StudentResponse getDefaultInstance() {
         return DEFAULT_INSTANCE;
     }
 
@@ -204,30 +204,30 @@ public final class StudentResponse extends
         return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
         return this.unknownFields;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
     internalGetFieldAccessorTable() {
-        return StudentProto.internal_static_com_dylan_proto_StudentResponse_fieldAccessorTable
+        return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StudentResponse_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                        StudentResponse.class, Builder.class);
+                        com.dylan.proto.StudentResponse.class, com.dylan.proto.StudentResponse.Builder.class);
     }
 
     /**
      * <code>string name = 1;</code>
      */
-    public String getName() {
-        Object ref = name_;
-        if (ref instanceof String) {
-            return (String) ref;
+    public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
         } else {
             com.google.protobuf.ByteString bs =
                     (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             name_ = s;
             return s;
         }
@@ -238,11 +238,11 @@ public final class StudentResponse extends
      */
     public com.google.protobuf.ByteString
     getNameBytes() {
-        Object ref = name_;
-        if (ref instanceof String) {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
             com.google.protobuf.ByteString b =
                     com.google.protobuf.ByteString.copyFromUtf8(
-                            (String) ref);
+                            (java.lang.String) ref);
             name_ = b;
             return b;
         } else {
@@ -260,14 +260,14 @@ public final class StudentResponse extends
     /**
      * <code>string city = 3;</code>
      */
-    public String getCity() {
-        Object ref = city_;
-        if (ref instanceof String) {
-            return (String) ref;
+    public java.lang.String getCity() {
+        java.lang.Object ref = city_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
         } else {
             com.google.protobuf.ByteString bs =
                     (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             city_ = s;
             return s;
         }
@@ -278,11 +278,11 @@ public final class StudentResponse extends
      */
     public com.google.protobuf.ByteString
     getCityBytes() {
-        Object ref = city_;
-        if (ref instanceof String) {
+        java.lang.Object ref = city_;
+        if (ref instanceof java.lang.String) {
             com.google.protobuf.ByteString b =
                     com.google.protobuf.ByteString.copyFromUtf8(
-                            (String) ref);
+                            (java.lang.String) ref);
             city_ = b;
             return b;
         } else {
@@ -333,15 +333,15 @@ public final class StudentResponse extends
         return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
         if (obj == this) {
             return true;
         }
-        if (!(obj instanceof StudentResponse)) {
+        if (!(obj instanceof com.dylan.proto.StudentResponse)) {
             return super.equals(obj);
         }
-        StudentResponse other = (StudentResponse) obj;
+        com.dylan.proto.StudentResponse other = (com.dylan.proto.StudentResponse) obj;
 
         boolean result = true;
         result = result && getName()
@@ -354,7 +354,7 @@ public final class StudentResponse extends
         return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
         if (memoizedHashCode != 0) {
             return memoizedHashCode;
@@ -381,19 +381,19 @@ public final class StudentResponse extends
                 ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<StudentResponse> getParserForType() {
         return PARSER;
     }
 
-    public StudentResponse getDefaultInstanceForType() {
+    public com.dylan.proto.StudentResponse getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
     }
 
@@ -404,9 +404,9 @@ public final class StudentResponse extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
             // @@protoc_insertion_point(builder_implements:com.dylan.proto.StudentResponse)
             com.dylan.proto.StudentResponseOrBuilder {
-        private Object name_ = "";
+        private java.lang.Object name_ = "";
         private int age_;
-        private Object city_ = "";
+        private java.lang.Object city_ = "";
 
         // Construct using com.dylan.proto.StudentResponse.newBuilder()
         private Builder() {
@@ -414,21 +414,21 @@ public final class StudentResponse extends
         }
 
         private Builder(
-                BuilderParent parent) {
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
             super(parent);
             maybeForceBuilderInitialization();
         }
 
         public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-            return StudentProto.internal_static_com_dylan_proto_StudentResponse_descriptor;
+            return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StudentResponse_descriptor;
         }
 
-        protected FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-            return StudentProto.internal_static_com_dylan_proto_StudentResponse_fieldAccessorTable
+            return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StudentResponse_fieldAccessorTable
                     .ensureFieldAccessorsInitialized(
-                            StudentResponse.class, Builder.class);
+                            com.dylan.proto.StudentResponse.class, com.dylan.proto.StudentResponse.Builder.class);
         }
 
         private void maybeForceBuilderInitialization() {
@@ -450,23 +450,23 @@ public final class StudentResponse extends
 
         public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-            return StudentProto.internal_static_com_dylan_proto_StudentResponse_descriptor;
+            return com.dylan.proto.StudentProto.internal_static_com_dylan_proto_StudentResponse_descriptor;
         }
 
-        public StudentResponse getDefaultInstanceForType() {
-            return StudentResponse.getDefaultInstance();
+        public com.dylan.proto.StudentResponse getDefaultInstanceForType() {
+            return com.dylan.proto.StudentResponse.getDefaultInstance();
         }
 
-        public StudentResponse build() {
-            StudentResponse result = buildPartial();
+        public com.dylan.proto.StudentResponse build() {
+            com.dylan.proto.StudentResponse result = buildPartial();
             if (!result.isInitialized()) {
                 throw newUninitializedMessageException(result);
             }
             return result;
         }
 
-        public StudentResponse buildPartial() {
-            StudentResponse result = new StudentResponse(this);
+        public com.dylan.proto.StudentResponse buildPartial() {
+            com.dylan.proto.StudentResponse result = new com.dylan.proto.StudentResponse(this);
             result.name_ = name_;
             result.age_ = age_;
             result.city_ = city_;
@@ -480,7 +480,7 @@ public final class StudentResponse extends
 
         public Builder setField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                Object value) {
+                java.lang.Object value) {
             return (Builder) super.setField(field, value);
         }
 
@@ -496,27 +496,27 @@ public final class StudentResponse extends
 
         public Builder setRepeatedField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, Object value) {
+                int index, java.lang.Object value) {
             return (Builder) super.setRepeatedField(field, index, value);
         }
 
         public Builder addRepeatedField(
                 com.google.protobuf.Descriptors.FieldDescriptor field,
-                Object value) {
+                java.lang.Object value) {
             return (Builder) super.addRepeatedField(field, value);
         }
 
         public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof StudentResponse) {
-                return mergeFrom((StudentResponse) other);
+            if (other instanceof com.dylan.proto.StudentResponse) {
+                return mergeFrom((com.dylan.proto.StudentResponse) other);
             } else {
                 super.mergeFrom(other);
                 return this;
             }
         }
 
-        public Builder mergeFrom(StudentResponse other) {
-            if (other == StudentResponse.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.dylan.proto.StudentResponse other) {
+            if (other == com.dylan.proto.StudentResponse.getDefaultInstance()) return this;
             if (!other.getName().isEmpty()) {
                 name_ = other.name_;
                 onChanged();
@@ -541,11 +541,11 @@ public final class StudentResponse extends
                 com.google.protobuf.CodedInputStream input,
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                 throws java.io.IOException {
-            StudentResponse parsedMessage = null;
+            com.dylan.proto.StudentResponse parsedMessage = null;
             try {
                 parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                parsedMessage = (StudentResponse) e.getUnfinishedMessage();
+                parsedMessage = (com.dylan.proto.StudentResponse) e.getUnfinishedMessage();
                 throw e.unwrapIOException();
             } finally {
                 if (parsedMessage != null) {
@@ -558,16 +558,16 @@ public final class StudentResponse extends
         /**
          * <code>string name = 1;</code>
          */
-        public String getName() {
-            Object ref = name_;
-            if (!(ref instanceof String)) {
+        public java.lang.String getName() {
+            java.lang.Object ref = name_;
+            if (!(ref instanceof java.lang.String)) {
                 com.google.protobuf.ByteString bs =
                         (com.google.protobuf.ByteString) ref;
-                String s = bs.toStringUtf8();
+                java.lang.String s = bs.toStringUtf8();
                 name_ = s;
                 return s;
             } else {
-                return (String) ref;
+                return (java.lang.String) ref;
             }
         }
 
@@ -575,7 +575,7 @@ public final class StudentResponse extends
          * <code>string name = 1;</code>
          */
         public Builder setName(
-                String value) {
+                java.lang.String value) {
             if (value == null) {
                 throw new NullPointerException();
             }
@@ -590,11 +590,11 @@ public final class StudentResponse extends
          */
         public com.google.protobuf.ByteString
         getNameBytes() {
-            Object ref = name_;
+            java.lang.Object ref = name_;
             if (ref instanceof String) {
                 com.google.protobuf.ByteString b =
                         com.google.protobuf.ByteString.copyFromUtf8(
-                                (String) ref);
+                                (java.lang.String) ref);
                 name_ = b;
                 return b;
             } else {
@@ -657,16 +657,16 @@ public final class StudentResponse extends
         /**
          * <code>string city = 3;</code>
          */
-        public String getCity() {
-            Object ref = city_;
-            if (!(ref instanceof String)) {
+        public java.lang.String getCity() {
+            java.lang.Object ref = city_;
+            if (!(ref instanceof java.lang.String)) {
                 com.google.protobuf.ByteString bs =
                         (com.google.protobuf.ByteString) ref;
-                String s = bs.toStringUtf8();
+                java.lang.String s = bs.toStringUtf8();
                 city_ = s;
                 return s;
             } else {
-                return (String) ref;
+                return (java.lang.String) ref;
             }
         }
 
@@ -674,7 +674,7 @@ public final class StudentResponse extends
          * <code>string city = 3;</code>
          */
         public Builder setCity(
-                String value) {
+                java.lang.String value) {
             if (value == null) {
                 throw new NullPointerException();
             }
@@ -689,11 +689,11 @@ public final class StudentResponse extends
          */
         public com.google.protobuf.ByteString
         getCityBytes() {
-            Object ref = city_;
+            java.lang.Object ref = city_;
             if (ref instanceof String) {
                 com.google.protobuf.ByteString b =
                         com.google.protobuf.ByteString.copyFromUtf8(
-                                (String) ref);
+                                (java.lang.String) ref);
                 city_ = b;
                 return b;
             } else {

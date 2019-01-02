@@ -14,7 +14,7 @@ public interface MyRequestOrBuilder extends
      *
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
 
     /**
      * <pre>

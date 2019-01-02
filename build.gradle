@@ -50,14 +50,12 @@ protobuf {
     }
     generateProtoTasks {
         all()*.plugins {
-            grpc {}
+            grpc {
+                outputSubDir = 'java'
+            }
         }
     }
+
+    generatedFilesBaseDir = "$projectDir/src/"
 }
-//sourceSets {
-//    main {
-//        java {
-//            srcDir 'src/main/java/com/dylan/proto'
-//        }
-//    }
-//}
+
