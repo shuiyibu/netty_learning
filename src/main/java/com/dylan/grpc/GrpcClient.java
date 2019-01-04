@@ -22,7 +22,7 @@ public class GrpcClient {
         StudentServiceGrpc.StudentServiceStub studentServiceStub = StudentServiceGrpc.newStub(channel); // for stream request; asyn call
 
         out.println("========================request: single string; response: single stream==================================");
-//        simpleRPC(blockingStub);
+        simpleRPC(blockingStub);
 
         out.println("========================request: single string; response:stream==================================");
 //        serversideStreamingRPC(blockingStub);
@@ -31,7 +31,7 @@ public class GrpcClient {
 //        clientsideStreamingRPC(studentServiceStub);
 
         out.println("========================request: stream; response: stream==================================");
-        bidirectionalStreamingRPC(studentServiceStub);
+//        bidirectionalStreamingRPC(studentServiceStub);
     }
 
     public static void simpleRPC(StudentServiceGrpc.StudentServiceBlockingStub blockingStub) {

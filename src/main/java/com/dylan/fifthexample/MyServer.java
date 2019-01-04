@@ -8,6 +8,8 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
+import java.nio.IntBuffer;
+
 /**
  * @Auther: langdylan
  * @Date: 2018/12/25 20:06
@@ -33,6 +35,6 @@ public class MyServer {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
         }
-
+        IntBuffer i;
     }
 }
